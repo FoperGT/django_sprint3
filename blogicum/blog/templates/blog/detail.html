@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="post">
+    <ul>
+        <li>Место: {{ post.location }}</li>
+        <li>Дата: {{ post.date }}</li>
+        <li>Категория: {{ post.category }}</li>
+    </ul>
+    <p>{{ post.text }}</p>
+</div>
+{% endblock %}
