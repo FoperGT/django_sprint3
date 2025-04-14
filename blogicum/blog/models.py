@@ -27,12 +27,14 @@ class Post(models.Model):
     location = models.ForeignKey(
         "Location",
         on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
     )
     category = models.ForeignKey(
         "Category",
         on_delete=models.SET_NULL,
         blank=False,
-        null=False,
+        null=True,
     )
     is_published = models.BooleanField(
         default=True,
