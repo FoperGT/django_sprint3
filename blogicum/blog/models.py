@@ -14,7 +14,7 @@ class Post(models.Model):
         blank=False,
         null=False,
     )
-    pub_data = models.DateTimeField(
+    pub_date = models.DateTimeField(
         blank=False,
         null=False,
     )
