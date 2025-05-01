@@ -49,4 +49,3 @@ class PostDetailView(DetailView):
             is_published=True,
             pub_date__lte=now()
         ), pk=self.kwargs['pk'])
-    
